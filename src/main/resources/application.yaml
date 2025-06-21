@@ -1,0 +1,13 @@
+#spring.application.name=mistralspring-ai
+
+spring:
+  application:
+    name: mistralspring-ai
+
+  ai:
+    mistralai:
+      api-key: ${MISTRALAI_API_KEY}
+      embedding:
+        options:
+          model: mistral-embed
+          encoding-format: float
