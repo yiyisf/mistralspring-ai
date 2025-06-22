@@ -11,3 +11,13 @@ spring:
         options:
           model: mistral-embed
           encoding-format: float
+
+    vectorstore:
+      elasticsearch:
+        initialize-schema: true
+        index-name: test-index
+        dimensions: 1536
+        similarity: cosine
+  elasticsearch:
+    username:
+    password:

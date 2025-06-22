@@ -62,7 +62,7 @@ public class ChatController {
                 """;
 
         return ChatClient.create(chatModel).prompt()
-                .user(u -> u.text("为 {actor} 生成 5 部电影的作品目录。")
+                .user(u -> u.text("为{actor}生成5部电影的作品目录。")
                         .param("actor", actor))
                 .system(s ->s.text(systemText).params(Map.of("name", "yiyi", "voice", "稳重")))
                 .call()
